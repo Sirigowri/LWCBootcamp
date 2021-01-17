@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-box slds-theme_default">
+        <div class="myClass">
+            Hello 
+            <template if:true={boolValue}>
+                &nbsp;{greeting}
+                <!-- Default/basic -->
+                <div class="slds-p-around_medium lgc-bg">
+                    <lightning-input type="text" label="Enter Name" onchange={handlerMethod}></lightning-input>
+                </div>
+            </template>
+        </div>
+        <br />
+        <lightning-input type="checkbox" label="Show Greeting" onchange={checkboxHandler} name="input1"></lightning-input>
+    </div>    
+</template>
